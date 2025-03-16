@@ -6,13 +6,44 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="双写绕过双写后缀绕过，这里适用于前后端都对文件的扩展名做了限制。我们可以通过双写文件的扩展名，达到绕过的目的。例如：xxx.php&#x3D;&gt;xxx.pphphp. 题目解析先规矩的上传一个php文件，发现上传成功  但文件后缀名被过滤了(原先我的文件名字是1.php） 查看源代码，发现使用了黑名单机制  如果是文件名被过滤，我们就可以直接利用双写来绕过。我们回到我们的文件,将后缀进行两次">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://wangxiangyang.github.io/index.html">
+<meta property="og:url" content="http://wangxiangyang.github.io/2025/03/16/%E5%8F%8C%E5%86%99%E7%BB%95%E8%BF%87/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="双写绕过双写后缀绕过，这里适用于前后端都对文件的扩展名做了限制。我们可以通过双写文件的扩展名，达到绕过的目的。例如：xxx.php&#x3D;&gt;xxx.pphphp. 题目解析先规矩的上传一个php文件，发现上传成功  但文件后缀名被过滤了(原先我的文件名字是1.php） 查看源代码，发现使用了黑名单机制  如果是文件名被过滤，我们就可以直接利用双写来绕过。我们回到我们的文件,将后缀进行两次">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/42c01d32a1ad7801b92a5f3a0323eff9.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/cc50e6c5fd57b47a64f367120c2667d9.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/d280c36ffe4a08a3dec4377935da1d34.png">
+<meta property="og:image" content="https://static.ctfhub.com/writeup/Skill/Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%97%A0%E9%AA%8C%E8%AF%81/acJW5BzqCB77xHCv1xVJg5.png?imageMogr2/auto-orient/blur/1x0/quality/75%7Cwatermark/1/image/aHR0cHM6Ly9zdGF0aWMuY3RmaHViLmNvbS93cml0ZXVwL2ltYWdlX21hc2sucG5n/dissolve/100/gravity/SouthEast/dx/10/dy/10%7Cimageslim">
+<meta property="og:image" content="https://static.ctfhub.com/writeup/Skill/Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%97%A0%E9%AA%8C%E8%AF%81/titUb1kDnYDKtXGUrVV9Q5.png?imageMogr2/auto-orient/blur/1x0/quality/75%7Cwatermark/1/image/aHR0cHM6Ly9zdGF0aWMuY3RmaHViLmNvbS93cml0ZXVwL2ltYWdlX21hc2sucG5n/dissolve/100/gravity/SouthEast/dx/10/dy/10%7Cimageslim">
+<meta property="og:image" content="https://static.ctfhub.com/writeup/Skill/Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%97%A0%E9%AA%8C%E8%AF%81/idVw5ZxRriVNrXRbSzdMiH.png?imageMogr2/auto-orient/blur/1x0/quality/75%7Cwatermark/1/image/aHR0cHM6Ly9zdGF0aWMuY3RmaHViLmNvbS93cml0ZXVwL2ltYWdlX21hc2sucG5n/dissolve/100/gravity/SouthEast/dx/10/dy/10%7Cimageslim">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/9hfZNMzA8nYkkeThbSgtuD.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/25ad40888f875789115875d399f2c0fa.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/53cf0850dc5ca21b0311668f82be512e.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/3462c59d916b573bfccacc39ca6f9ce4.png">
+<meta property="og:image" content="https://i-blog.csdnimg.cn/blog_migrate/5f94850c4a4fb0069e5cf8a92ebc628f.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/56b6d04045e4122b4eae8f3e693a6ec5.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/471166e6de440d98f98ca80cef7a53e1.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/4478c18c3016f053b339ac6039c1d763.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/d4b39665a66a34037820c42d44fe28a2.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/34103447f55dec708eb11c608c29846f.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/e6ef6a1e6ba3db5b0cc20463b23eab0c.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/ce304dacd11645e62891dcc7aa99f033.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/cc45ca5891e82c08cc9f256e89990410.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/9084a646d07755b64ef49635c636601d.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/691bf52e94004272896fb74d0f2f5b84.png">
+<meta property="og:image" content="c:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20250316140359605.png">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/acJW5BzqCB77xHCv1xVJg5.png">
+<meta property="og:image" content="https://static.ctfhub.com/writeup/Skill/Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%97%A0%E9%AA%8C%E8%AF%81/titUb1kDnYDKtXGUrVV9Q5.png?imageMogr2/auto-orient/blur/1x0/quality/75%7Cwatermark/1/image/aHR0cHM6Ly9zdGF0aWMuY3RmaHViLmNvbS93cml0ZXVwL2ltYWdlX21hc2sucG5n/dissolve/100/gravity/SouthEast/dx/10/dy/10%7Cimageslim">
+<meta property="og:image" content="https://gitee.com/wxy-2005/picture/raw/master/idVw5ZxRriVNrXRbSzdMiH.png">
+<meta property="og:image" content="https://static.ctfhub.com/writeup/Skill/Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%97%A0%E9%AA%8C%E8%AF%81/9hfZNMzA8nYkkeThbSgtuD.png?imageMogr2/auto-orient/blur/1x0/quality/75%7Cwatermark/1/image/aHR0cHM6Ly9zdGF0aWMuY3RmaHViLmNvbS93cml0ZXVwL2ltYWdlX21hc2sucG5n/dissolve/100/gravity/SouthEast/dx/10/dy/10%7Cimageslim">
+<meta property="article:published_time" content="2025-03-16T11:50:25.484Z">
+<meta property="article:modified_time" content="2025-03-16T11:50:25.484Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/wxy-2005/picture/raw/master/42c01d32a1ad7801b92a5f3a0323eff9.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +100,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-双写绕过" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-双写绕过" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/03/16/%E5%8F%8C%E5%86%99%E7%BB%95%E8%BF%87/" class="article-date">
   <time class="dt-published" datetime="2025-03-16T11:50:25.484Z" itemprop="datePublished">2025-03-16</time>
@@ -205,62 +234,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/03/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-03-16T07:24:02.068Z" itemprop="datePublished">2025-03-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/03/16/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2025/03/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wangxiangyang.github.io/2025/03/16/hello-world/" data-id="cm8bbm3d000009ctg1nasd3gi" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
